@@ -1,0 +1,19 @@
+.tabs {
+    min-width: 50%;
+    max-width: 60%;
+    height: 80%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.5rem;
+    z-index: 2;
+}
+
+.tabs .tab {
+    min-width: 11%;
+    height: 70%;
+    background-color: #fff;
+    border-radius: 70px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+
+}
