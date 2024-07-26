@@ -7,6 +7,7 @@
     align-items: center;
     gap: 0.5rem;
     z-index: 2;
+    border: 1px solid red;
 }
 
 .tabs .tab {

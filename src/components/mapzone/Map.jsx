@@ -1,15 +1,17 @@
 import L from 'leaflet';
 import React, { useEffect } from 'react';
-import { MapContainer, TileLayer, useMap } from 'react-leaflet';
+import '@supermap/iclient-leaflet';
+import { MapContainer, useMap } from 'react-leaflet';
 import 'leaflet/dist/leaflet.css';
 import './Map.css';
 
 const Map = () => {
-
     const ZoomControl = () => {
         const map = useMap();
-
+        const url = "http://srv525080.hstgr.cloud:8090/iserver/services/map-donnees_ci-2/rest/maps/donnees_ci";
         useEffect(() => {
+            new L.supermap.TiledMapLayer(url).addTo(map);
+
             const zoomControl = L.control.zoom({
                 position: 'bottomright'
             });
@@ -26,10 +28,7 @@ const Map = () => {
 
     return (
         <div className="map_zone">
-            <MapContainer center={[51.505, -0.09]} zoom={13} zoomControl={false} className="map">
-                <TileLayer
-                    url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
-                />
+            <MapContainer crs={L.CRS.EPSG4326} center={[7 , -6]} zoom={8.45} maxZoom={18} zoomControl={false} className="map">
                 <ZoomControl />
             </MapContainer>
         </div>
