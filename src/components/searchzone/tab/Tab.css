@@ -1,5 +1,5 @@
 .tabs {
-    min-width: 50%;
+    min-width: fit-content;
     max-width: 60%;
     height: 80%;
     display: flex;
@@ -10,10 +10,18 @@
 }
 
 .tabs .tab {
-    min-width: 11%;
+    min-width: 120px;
     height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: #fff;
     border-radius: 70px;
     box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
 
+}
+
+.tabs .tab h4 {
+    font-weight: 600;
+    color: #4c5265;
 }
