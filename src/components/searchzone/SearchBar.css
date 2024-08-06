@@ -39,7 +39,7 @@
 }
 
 .search_bar .engine .engine_search_input .input_search::placeholder {
-    padding-left: 1.5rem;
+    padding-left: 1rem;
 }
 
 .search_bar .engine .engine_search_icon {
@@ -48,4 +48,5 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
