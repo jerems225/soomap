@@ -1,5 +1,5 @@
 import L from 'leaflet';
-import React, { useEffect, useState } from 'react';
+import React, { useEffect } from 'react';
 import '@supermap/iclient-leaflet';
 import { MapContainer, useMap } from 'react-leaflet';
 import maps from '../../utils/datas/maps';
