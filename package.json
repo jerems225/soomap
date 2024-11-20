@@ -1,6 +1,6 @@
 {
   "name": "soomapv1",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
   "dependencies": {
     "@supermap/iclient-common": "^11.1.1",
@@ -17,8 +17,8 @@
     "web-vitals": "^4.2.2"
   },
   "scripts": {
-    "start": "react-scripts --openssl-legacy-provider start",
-    "build": "react-scripts --openssl-legacy-provider build",
+    "start": "react-scripts start",
+    "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },

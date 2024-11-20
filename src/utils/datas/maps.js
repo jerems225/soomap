@@ -1,7 +1,7 @@
 const maps = {
     'civ' : {
-        url : 'http://93.127.163.84:8090/iserver/services/map-donnees_ci/rest/maps/donnees_ci',
-        data_url: 'http://93.127.163.84:8090/iserver/services/data-donnees_ci/rest/data'
+        url : 'https://iserver.spadex.cloud/iserver/services/map-donnees_ci/rest/maps/donnees_ci',
+        data_url: 'https://iserver.spadex.cloud/iserver/services/data-donnees_ci/rest/data'
     }
 }
 
